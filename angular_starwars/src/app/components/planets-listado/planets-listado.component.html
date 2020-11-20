@@ -1,0 +1,27 @@
+  <table class="table col-md-10 mx-auto">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Rotacion</th>
+        <th>Periodo_orbital</th>
+        <th>Diametro</th>
+        <th>Clima</th>
+        <th>Gravedad</th>
+        <th>Terreno</th>
+        <th>Poblacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plt of listadoPlanetas">
+        <td>{{plt.name}}</td>
+        <td>{{plt.rotation_period}}</td>
+        <td>{{plt.orbital_period}}</td>
+        <td>{{plt.diameter}}</td>
+        <td>{{plt.climate}}</td>
+        <td>{{plt.gravity}}</td>
+        <td>{{plt.terrain}}<td>
+        <td>{{plt.population}}</td>
+      </tr>
+    </tbody>
+  </table>
+
