@@ -10,13 +10,15 @@ import { PlanetsListadoComponent } from './components/planets-listado/planets-li
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTableModule} from '@angular/material/table';
-
+import { PeliculasService } from "./services/peliculas.service";
+import { ListadoPeliculasComponent } from './components/listado-peliculas/listado-peliculas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlanetsListadoComponent
+    PlanetsListadoComponent,
+    ListadoPeliculasComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatTableModule
   ],
-  providers: [PlanetsService],
+  providers: [PlanetsService,PeliculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

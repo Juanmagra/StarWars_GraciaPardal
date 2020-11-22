@@ -1,6 +1,7 @@
+
   <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="0px" class="container mx-auto">
 
-    <table mat-table [dataSource]="listadoPlanetas" class="mat-elevation-z8" fxFlex="1 1 100%">
+    <table mat-table [dataSource]="listadoPeliculas" class="mat-elevation-z8" fxFlex="1 1 100%">
 
         <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
             <th mat-header-cell *matHeaderCellDef> {{column}} </th>

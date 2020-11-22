@@ -12,6 +12,9 @@ import { PlanetaResponse } from '../../models/planetaResponse';
 export class PlanetsListadoComponent implements OnInit {
 
 listadoPlanetas: Planeta[];
+columnsToDisplay = ['name', 'rotation_period','orbital_period','diameter','climate',
+                    'gravity','terrain','surface_water','population'];
+
 
   constructor( private planetService: PlanetsService) { }
 
